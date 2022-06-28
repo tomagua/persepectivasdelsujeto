@@ -1,0 +1,162 @@
+*{  margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;}
+
+body{background: linear-gradient(to top, rgb(36, 14, 134), rgb(39, 55, 199))}
+
+.contenedor{background: rgb(116, 103, 103);
+    width: 85%;
+    padding: 2%;
+    margin: 20px auto;}
+
+header{background: linear-gradient(to top, rgb(72, 23, 136), rgb(38, 16, 119));
+    padding: 5% 0%;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;}
+
+header > h1{font-size: 45px;
+    color: rgb(142, 103, 192);}
+
+
+/* propiedades a nuestra caja_menu tamaño y centramos */
+.caja_menu{background: rgb(157, 157, 199);
+    height: 13%;
+    margin: 4% 0px;
+    padding: 4%;
+    flex-direction: column ;
+}
+
+.nav{display: flex;
+justify-content: center;}
+
+
+
+
+
+  
+
+  .intro{background: rgb(85, 23, 76);
+    height: 98%;
+    padding: 20px;
+    width: 50%;    
+    float: left;}  
+
+
+
+.centro{
+width: 25%;
+height: 600px;
+float: left;  
+background-color: rgb(65, 25, 65); 
+margin: 0px 10px}
+
+.imgtemast {
+width: 25%;
+height:auto;
+margin-top: 4%;
+padding:4%;
+}
+
+
+.costado{
+    width: 18%;
+    float: left;  
+    background-color: rgb(65, 25, 65); 
+    padding: 20px;
+    height: 600px;
+    margin: 0px 10px}
+
+footer{background: rgb(82, 32, 88);
+    height: 170px;
+    margin-top: 30px;
+    padding: 10px 80px;
+    }
+
+h6{color: white;
+    text-align: center;}
+
+
+
+.prueba{background: rgb(69, 27, 82);
+    width: 100px;
+    height: 100px;}
+/* .classcentro {transition: 1s ease-in-out;} */
+/* Quitamos los estilos de ul y li */
+ol, li {
+    list-style:none;
+}
+
+/* hacemos flotar a los li hijos de la clase nav ".nav" */
+.nav > li{
+    float:left;
+}
+
+.clear{clear: both;}
+
+/* damos estilos a cada elemento) */
+nav li a {
+    background-color:rgb(157, 157, 165);
+    color:rgb(62, 235, 221);
+    text-decoration:none; /*Quitamos el estilo de los link*/
+    padding:10px 12px;    
+    border: medium solid #333;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    display:block; /*los convertimos en bloques*/
+}
+
+.nav > li > a{margin-right: 30px;} /*damos margin solo a los a que son decendientes de li y .nav*/
+
+/* :hover efecto de cambio de color al pasar el mouse */
+nav li a:hover {
+    background-color:rgb(179, 110, 110);
+    
+}
+
+/* Aca ocultamos los Submenu */
+.nav li ol {
+    display:none;
+    position:absolute;
+    min-width:140px;}
+
+/*Se muestran los submenu al pasar el mouse*/
+.nav li:hover > ol {
+    display:block;
+}
+
+.nav li ol li {
+    position:relative;
+}
+/* lo ubicamos a la derecha de nuestro menú */
+.nav li ol li ol {
+    right:-98px;
+    top:0px ; }
+
+    /*codigo de los temas que se dan*/
+
+    .temas{
+        float:left;
+    }
+
+    .temas li a {margin-right: 90px;}
+    
+    .temas li a {
+        background-color:rgb(157, 157, 165);
+        color:rgb(62, 235, 221);
+        text-decoration:none; /*Quitamos el estilo de los link*/
+        padding:10px 12px;    
+        border: medium solid #333;
+        border-radius: 10px;
+        width: 140px;
+        text-align: center;
+        display:block; /*los convertimos en bloques*/
+    }
+
+    .imgtemas{width: 130px;
+    float:left;margin-right: 98px;}
+
+    .imgclase{width: 140px;
+        float:left;
+        }
